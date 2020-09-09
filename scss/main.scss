@@ -1,0 +1,73 @@
+@import 'variables';
+@import 'mixins';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+	@include background;
+	background-color: $primary-color;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: 1.5;
+	height: $primary-size;
+}
+
+// headings
+
+h1,
+h2 {
+	font-weight: 400;
+	color: white;
+
+	&.lg-heading {
+		font-size: 3rem;
+		
+		span {
+			color: $secundary-color;
+		}
+	}
+
+	&.sm-heading {
+		font-size: 1.2rem;
+		margin-bottom: 1.5rem;
+		background: lighten($primary-color, 3)
+	}
+
+}
+
+//links
+
+a {
+	color: #fff;
+	text-decoration: none;
+	&:hover {
+		@include easyOut();
+	}
+}
+
+//header 
+
+ header {
+	 position: fixed;
+	 top: 0;
+	 z-index: 2;
+	 width: $primary-size;
+ }
+
+
+main {
+	@include posMain();
+	height: &primary-size;
+
+	&.home {
+		overflow: hidden;
+		margin-top: 20vh;
+
+		a {
+			padding:0.4rem
+		}
+	}
+}
+
+

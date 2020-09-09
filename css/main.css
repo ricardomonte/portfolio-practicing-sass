@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url(https://cdn.pixabay.com/photo/2016/03/26/13/09/notebook-1280538_960_720.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #444;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 1.5;
+  height: 100%;
+}
+body:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(68, 68, 68, 0.7);
+  z-index: -1;
+}
+
+h1,
+h2 {
+  font-weight: 400;
+  color: white;
+}
+h1.lg-heading,
+h2.lg-heading {
+  font-size: 3rem;
+}
+h1.lg-heading span,
+h2.lg-heading span {
+  color: #bada55;
+}
+h1.sm-heading,
+h2.sm-heading {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  background: #4c4c4c;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #bada55;
+  transition: color 0.5s ease-out;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+main {
+  margin-left: 6rem;
+  padding: 4rem;
+  height: main primary-size;
+}
+main.home {
+  overflow: hidden;
+  margin-top: 20vh;
+}
+main.home a {
+  padding: 0.4rem;
+}

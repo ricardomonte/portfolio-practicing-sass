@@ -1,0 +1,32 @@
+
+@mixin background {
+    background: $home-image;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: $primary-size;
+        height: $primary-size;
+        background-color: rgba($primary-color, $background-opacity);
+        z-index: -1;
+    }
+}
+
+@mixin posMain {
+    margin-left: 6rem;
+    padding: 4rem; 
+}
+
+@mixin easyOut {
+    color: $secundary-color;
+    transition: color 0.5s ease-out;
+}
+
+@mixin rowFlex {
+    display: flex;
+    justify-content: space-between;
+}
