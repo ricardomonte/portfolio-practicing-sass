@@ -43,8 +43,9 @@ h2.sm-heading {
 }
 
 a {
+  padding: 0.4rem;
   color: #fff;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 a:hover {
   color: #bada55;
@@ -66,7 +67,4 @@ main {
 main.home {
   overflow: hidden;
   margin-top: 20vh;
-}
-main.home a {
-  padding: 0.4rem;
 }

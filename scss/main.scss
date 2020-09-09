@@ -37,15 +37,14 @@ h2 {
 }
 
 //links
-
 a {
+	padding:0.4rem;
 	color: #fff;
-	text-decoration: none;
+	text-decoration: none !important;
 	&:hover {
 		@include easyOut();
 	}
 }
-
 //header 
 
  header {
@@ -64,9 +63,7 @@ main {
 		overflow: hidden;
 		margin-top: 20vh;
 
-		a {
-			padding:0.4rem
-		}
+		
 	}
 }
 
