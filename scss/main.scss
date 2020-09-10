@@ -1,6 +1,7 @@
+
 @import 'variables';
 @import 'mixins';
-@import 'mobile';
+
 
 
 * {
@@ -74,4 +75,4 @@ main {
 	}
 }
 
-
+@import 'mobile';

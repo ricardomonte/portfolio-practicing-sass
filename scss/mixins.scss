@@ -38,7 +38,14 @@
 // Media Query
 
 @mixin Sm {
-	@media screen and(max-width:500px) {
+	@media screen and(max-width: 576px) {
+		@content;
+	}
+	
+}
+
+@mixin Md {
+	@media screen and(max-width: 768px) {
 		@content;
 	}
 	

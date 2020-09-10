@@ -13,10 +13,17 @@
 //SmallScreen
 
 @include Sm {
+  h1.lg-heading {
+    font-size: 8.3vw;
+  }
+  
+}
+
+@include Md {
   main {
     @include rowFlex;
     text-align: center;
-    margin-left: 0 !important; 
+    margin-left: 0; 
   }
 
   .container-main {
