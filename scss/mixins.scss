@@ -23,10 +23,13 @@
 
 @mixin easyOut {
     color: $secundary-color;
-    transition: color 0.5s ease-out;
+    transition: all 0.5s ease-out;
 }
 
 @mixin rowFlex {
     display: flex;
     justify-content: space-between;
 }
+
+
+
