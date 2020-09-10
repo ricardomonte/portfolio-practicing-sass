@@ -48,15 +48,28 @@ a {
 		@include easyOut();
 	}
 }
+
 //header 
 
  header {
-	 position: fixed;
-	 top: 0;
-	 z-index: 2;
-	 width: $primary-size;
- }
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	width: $primary-size;
 
+	.navbar {
+		justify-content: flex-end;
+		margin-top: 1.6rem;
+	}
+
+	.navbar-nav{
+		align-items: flex-end;
+	}
+
+	.nav-item{
+		@include menu;
+	}
+}
 
 main {
 	margin-left: 6rem;

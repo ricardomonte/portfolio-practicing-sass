@@ -59,6 +59,19 @@ header {
   z-index: 2;
   width: 100%;
 }
+header .navbar {
+  justify-content: flex-end;
+  margin-top: 1.6rem;
+}
+header .navbar-nav {
+  align-items: flex-end;
+}
+header .nav-item {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.8rem 0 0 0;
+  text-transform: uppercase;
+}
 
 main {
   margin-left: 6rem;
