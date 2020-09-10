@@ -1,5 +1,7 @@
 @import 'variables';
 @import 'mixins';
+@import 'mobile';
+
 
 * {
     box-sizing: border-box;
@@ -7,10 +9,9 @@
 
 body {
 	@include background;
-	background-color: $primary-color;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-weight: 1.5;
-	height: $primary-size;
+	overflow: hidden;
 }
 
 // headings
@@ -29,6 +30,7 @@ h2 {
 	}
 
 	&.sm-heading {
+		width: 50%;
 		font-size: 1.2rem;
 		margin-bottom: 1.5rem;
 		background: lighten($primary-color, 3)
@@ -56,14 +58,19 @@ a {
 
 
 main {
-	@include posMain();
-	height: &primary-size;
+	margin-left: 6rem;
+	padding: 4rem; 
+	height: $primary-size;
+	width: $primary-size;
 
 	&.home {
 		overflow: hidden;
-		margin-top: 20vh;
-
-		
+		margin-top: 20vh;	
+	
+		.container-main {
+			width: $primary-size;
+			height: $primary-size;
+		}
 	}
 }
 

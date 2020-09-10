@@ -1,0 +1,26 @@
+// //WideScreen
+
+// @include mediaLG {
+  
+// }
+
+// //MediumScreen
+
+// @include mediaMd {
+  
+// }
+
+//SmallScreen
+
+@include Sm {
+  main {
+    @include rowFlex;
+    text-align: center;
+    margin-left: 0 !important; 
+  }
+
+  .container-main {
+    @include colFlex;
+  }
+}
+
