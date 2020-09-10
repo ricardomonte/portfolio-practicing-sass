@@ -88,4 +88,31 @@ main {
 	}
 }
 
+.container-grid {
+	@include grid;
+	@include aboutText;
+
+	.img {
+		grid-area: img;
+	}
+
+	.container-bio{
+		@include colFlex;
+		grid-area: bio;
+		text-align: center;
+		width: 80%;
+		margin-left: 0.6rem;
+	}
+
+	.job-1 {
+		grid-area: job1;
+	}
+	.job-2 {
+		grid-area: job2;
+	}
+	.job-3 {
+		grid-area: job3;
+	}
+}
+
 @import 'mobile';
